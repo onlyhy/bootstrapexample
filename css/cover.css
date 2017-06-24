@@ -1,0 +1,138 @@
+html,
+body{
+	background-color: #333;
+	height: 100%;
+}
+body{
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+
+/* link*/
+a,
+a:focus,
+a:hover{
+	color: #fff;
+}
+
+/*button*/
+.btn-default,
+.btn-default:focus,
+.btn-default:hover{
+	text-shadow: none;/*基础的文本阴影效果*/
+	color: #333;
+	background-color: #fff;
+	border:1px solid #fff;
+}
+
+.site-wrapper{
+	display: table;/*作为块级表格来表现*/
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+			box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner{
+	display: table-cell;/*作为一个表格单元格显示*/
+	vertical-align:top;/*元素顶端与行中最高元素对齐*/
+}
+.cover-container{
+	margin-left:: auto;
+	margin-right: auto;
+}
+
+.inner {
+  padding: 30px;
+}
+
+
+/*         top          */
+.masthead-brand{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.masthead-nav > li{
+	display: inline-block;
+}
+/*相邻同胞兄弟选择器*/
+.masthead-nav >li + li{
+	margin-left: 20px;
+}
+.masthead-nav >li >a{
+	padding-right: 0;
+	padding-left: 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	color: rgba(255,255,255,.75);
+	border-bottom: 2px solid transparent;
+}
+.masthead-nav >li >a:hover,
+.masthead-nav >li >a:focus{
+	background-color: transparent;
+	border-bottom-color: #a9a9a9;
+	border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active >a,
+.masthead-nav > .active >a:hover,
+.masthead-nav > .active >a:focus{
+	color: #fff;
+	border-bottom-color: #fff;
+}
+@media (min-width:768px) {
+	.masthead-brand{
+		float: left;
+	}
+	.masthead-nav{
+		float: right;
+	}
+}
+
+/*         center          */
+.cover{
+	padding: 0 20px;
+}
+.cover .btn-lg{
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+/*         foot          */
+.mastfoot{
+	color: #999;
+	color: rgba(255,255,255,.5);
+}
+
+@media (min-width: 768px) {
+	.masthead{
+		position: fixed;
+		top: 0;
+	}
+	.mastfoot{
+		position: fixed;
+		bottom: 0;
+	}
+	.site-wrapper-inner{
+		vertical-align: middle;
+	}
+	.masthead,
+	.mastfoot,
+	.cover-container{
+		width: 100%;
+	}
+	
+	
+}
+@media (min-width: 992px) {
+	.masthead,
+	.mastfoot,
+	.cover-container{
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
